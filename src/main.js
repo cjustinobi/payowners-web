@@ -4,6 +4,10 @@ import axios from '../axios';
 import router from './router'
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
+import './assets/css/style.scss'
+import './assets/bootstrap-4.3.1-dist/css/bootstrap.min.css'
+import './assets/fontawesome/fontawesome-free-5.9.0-web/css/all.min.css'
+// import './assets/js/jquery-3.4.1.min'
 
 Vue.config.productionTip = false
 

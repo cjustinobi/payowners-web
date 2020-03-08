@@ -1,3 +1,5 @@
+$primary-color: #EE8D5A;
+
 body {
   margin: 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -5,3 +7,226 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 600;
+}
+.pri-color {
+  color: $primary-color;
+}
+.pri-bg {
+  background: $primary-color;
+}
+
+.ant-btn {
+  color: #fefefe;
+  background: $primary-color !important;
+  &:hover {
+    border: 1px solid $primary-color;
+    color: #fefefe;
+  }
+}
+.ant-menu-item-active {
+  border-bottom: none !important;
+}
+
+/*######*/
+#main{
+  min-height: 100%;
+}
+
+
+
+.brand-name{
+  color: #EE8D5A;
+  font-weight: 600;
+  font-family: 'Segoe UI';
+  font-size: 25px;
+}
+
+.brand-name:hover{
+  color: #EE8D5A;
+  transition: 0.5s;
+}
+
+.btn-started{
+  background: #EE8D5A;
+  border: 1px solid;
+  border-style: none;
+  padding: 11px 0;
+}
+
+.text-dark{
+  font-size: 20px;
+}
+
+.navbar-toggler-icon{
+  color: #EE8D5A !important;
+  font-size: 25px !important;
+  margin-top: 10px;
+}
+
+
+
+.btn-outline{
+  background-color: transparent;
+  border: 2px solid #EE8D5A;
+  color: #EE8D5A;
+  font-size: 20px;
+}
+
+.bg-section{
+  background-color: #ffbb99;
+  position: absolute;
+  opacity: 0.7;;
+}
+
+.bg-section-content{
+  background-color: #fff !important;
+  line-height: 23px;
+}
+
+.card-title, .card-link{
+  color: #df621e;
+  font-weight: 500;
+}
+
+.card-link:hover{
+  color: #df621e;
+}
+
+.card-text{
+  line-height: 23px;
+
+}
+
+
+/* Confirm Section */
+.btn-start{
+  background: #EE8D5A;
+  color: #f2f3f3;
+}
+
+.loan-bg{
+  background-color: #ffbb99;
+  position: relative;
+}
+
+.card-style{
+  border-style: none;
+}
+
+p.card-text{
+  width: 100% !important;
+  margin: 20px auto !important;
+
+}
+
+.borrow-box{
+  border: 1px solid #ddd;
+  width: 50%;
+  margin: 0 auto;
+
+  border-radius: 10px;
+}
+
+.borrow{
+  color: #df621e;
+  text-decoration: underline;
+}
+
+.sound-text{
+  font-family: 'Segoe UI';
+  font-size: 40px;
+}
+
+
+.cycle-rider img{
+  /* display: block; */
+  margin: 0 auto;
+
+}
+
+.cycle-rider a{
+  text-decoration: none;
+}
+.btn-start-2{
+  margin: 0 auto;
+  background: #EE8D5A;
+  color: #f2f3f3;
+  border-style: none;
+}
+
+.btn-start-2:hover{
+  color: #fff;
+}
+
+.app-color{
+  color: #EE8D5A;
+  font-weight: 600;
+  font-family: 'Segoe UI';
+  font-size: 35px;
+}
+
+/* End Of Confirm Section */
+
+
+
+/* Footer Begins */
+
+.footer{
+  background:  #33313B;
+  margin-top: 75px;;
+  /* opacity: 0.84; */
+  padding-bottom: 10px;
+  position: relative;
+  bottom: 0;
+}
+
+.content-header{
+  color: #df621e;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.company-details ul  li{
+  list-style-type: none;
+
+}
+
+.company-details ul  li a{
+  color: #f2f3f3;
+  text-decoration: none;
+}
+
+.content-app{
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 500;
+  color: #df621e;
+}
+
+.downloaded-logo a img{
+  padding: 10px 0;
+}
+
+.icon{
+  font-size: 49px;
+  background: #df621e;
+  color: #ccc;
+  border-radius: 50%;
+  padding: 9px 10px;
+  margin: 2px 5px;
+
+}
+
+.copyright{
+  color: #df621e;
+  font-family: Cambria;
+  font-size: 23px;
+}
+

@@ -1,19 +1,35 @@
 <template>
   <div id="app">
-    <a-menu v-model="current" mode="horizontal">
-      <a-menu-item key="mail"> <a-icon type="mail" />Navigation One </a-menu-item>
-      <a-menu-item key="app" > <a-icon type="appstore" />Navigation Two </a-menu-item>
-
-    </a-menu>
+    <AppHeader/>
+    <router-view/>
+    <AppFooter/>
   </div>
 </template>
 
 <script>
+import AppHeader from './components/Layout/Header'
+import AppFooter from './components/Layout/Footer'
 
+import axios from 'axios'
 export default {
   name: 'App',
   components: {
-
+    AppHeader,
+    AppFooter,
+  },
+  methods: {
+    getTest() {
+      this.$http.get('/sterling/TransferAPIs/api/Spay/InterbankNameEnquiry?', {
+        // "headers": {
+        //   "sandbox-key": "5becec1e9d6c7d670cde1ae3cdcc7f66"
+        // }
+      })
+        .then((response) => console.log(response))
+        .catch((error) => console.log(error))
+    }
+  },
+  mounted() {
+    // this.getTest()
   }
 }
 </script>
